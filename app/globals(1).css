@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --brand-yellow: #f6d36b;
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-brand-yellow: var(--brand-yellow);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-dm-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Global cursor rule for clickable elements */
+a, button, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
+  cursor: pointer;
+}
+
+.rte.ProseMirror {
+  padding: 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.rte.ProseMirror p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.rte.ProseMirror h1,
+.rte.ProseMirror h2 {
+  font-weight: 700;
+  color: #000000;
+}
+
+.rte.ProseMirror blockquote {
+  border-left: 3px solid var(--brand-yellow);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  color: #111827;
+  background-color: #faf5e7;
+  border-radius: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.rte.ProseMirror pre {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
+
+.rte.ProseMirror pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.rte.ProseMirror code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.rte.ProseMirror a {
+  color: var(--brand-yellow);
+  text-decoration: underline;
+}
+
+.rte.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.rte.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}

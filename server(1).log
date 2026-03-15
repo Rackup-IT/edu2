@@ -1,0 +1,22 @@
+
+> rackup-it@0.1.0 start
+> next start
+
+▲ Next.js 16.1.1
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 2.1s
+⨯ MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at <unknown> (MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017)
+    at async n (.next/server/chunks/[root-of-the-server]__6c96fa22._.js:1:1410)
+    at async w (.next/server/chunks/[root-of-the-server]__311cd2fd._.js:1:2719)
+    at async d (.next/server/chunks/[root-of-the-server]__311cd2fd._.js:1:6095)
+    at async l (.next/server/chunks/[root-of-the-server]__311cd2fd._.js:1:7136)
+    at async Module.q (.next/server/chunks/[root-of-the-server]__311cd2fd._.js:1:8214) {
+  errorLabelSet: Set(0) {},
+  reason: [TopologyDescription],
+  code: undefined,
+  [cause]: [TopologyDescription]
+}
