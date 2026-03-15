@@ -40,10 +40,10 @@ export default function Navbar({
               Services
             </Link>
             <Link
-              href="/products"
+              href="/about"
               className="text-neutral-600 font-medium hover:text-black transition-colors"
             >
-              Product
+              Our Team
             </Link>
             <Link
               href="/blog"
@@ -90,11 +90,11 @@ export default function Navbar({
             Services
           </Link>
           <Link
-            href="/products"
+            href="/about"
             className="text-neutral-600 font-medium text-lg py-2 border-b border-neutral-50 hover:text-black"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Product
+            Our Team
           </Link>
           <Link
             href="/blog"
